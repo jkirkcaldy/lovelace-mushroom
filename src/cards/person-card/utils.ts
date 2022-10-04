@@ -7,6 +7,8 @@ export function getStateIcon(entity: HassEntity, zones: HassEntity[]) {
         return "mdi:help";
     } else if (state === "not_home") {
         return "mdi:home-export-outline";
+    } else if (state === "away") {
+        return "mdi:home-export-outline";        
     } else if (state === "home") {
         return "mdi:home";
     }
@@ -25,6 +27,8 @@ export function getStateColor(entity: HassEntity, zones: HassEntity[]) {
         return "var(--rgb-state-person-unknown)";
     } else if (state === "not_home") {
         return "var(--rgb-state-person-not-home)";
+    } else if (state === "away") {
+        return "var(--rgb-state-person-not-home)";        
     } else if (state === "home") {
         return "var(--rgb-state-person-home)";
     }
